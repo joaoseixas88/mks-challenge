@@ -10,7 +10,7 @@ export const Container = styled.header`
 	align-items: center;
 	z-index: 5;
 
-	@media (max-width: 720px) {
+	@media (max-width: 800px) {
       padding: 1.75rem 1.25rem;
     }
 
@@ -49,12 +49,20 @@ export const Container = styled.header`
 		justify-content: center;
 		gap: 16px;
 
+		transition: .2s;
+
 		p{
 			font-size: 1.1rem;
 			font-weight: 600;
 			line-height: 21px;
 			color: ${({ theme }) => theme.colors.primaryBlack};
 		}
+
+		&:hover{
+			opacity: .8;
+		}
+
+		cursor: pointer;
 	}
 
 `

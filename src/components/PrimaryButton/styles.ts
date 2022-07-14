@@ -12,6 +12,7 @@ export const Container = styled.button`
 	color: ${({ theme }) => theme.colors.shape};
 	font-size: 0.9rem;
 	font-weight: 500;
+	transition: .2s;
 
 	&:hover{
 		opacity: .9;

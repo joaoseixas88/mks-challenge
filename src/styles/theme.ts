@@ -12,7 +12,7 @@ const theme = {
     shape: "#FFFFFF",
     primaryBlack: "#000000",
     secondaryBlack: "#373737",
-		lightGray: "#EEEEEE",
+		lightGray: "#BFBFBF",
 
   },
 };

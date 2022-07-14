@@ -11,7 +11,7 @@ interface Props {
 
 export function PrimaryButton({ label, icon }: Props) {
 	return (
-		<Container>
+		<Container onClick={() => console.log('click')}>
 			{ icon && <Image src={icon}/>}
 			{label}
 		</Container>

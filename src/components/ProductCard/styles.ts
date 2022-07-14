@@ -21,10 +21,11 @@ export const Container = styled.div`
 	.image-container{		
 		position: relative;
 		height: calc(138rem/16);
-		align-items: center;		justify-content: center;
+		align-items: center;		
+		justify-content: center;
 
 		@media (max-width: 800px) {
-			height: 158px;
+			height: calc(158rem/16);
 	}
 		
 	}
