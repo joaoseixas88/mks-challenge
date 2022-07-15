@@ -35,7 +35,7 @@ export function MobileCartCard({ item }: Props) {
 							-
 						</div>
 						<div className='quantity'>
-							<span>|</span> 1 <span>|</span>
+							<span>|</span> {item.quantity} <span>|</span>
 						</div>
 						<div className="custom-button" onClick={() => dispatch(incrementItemToCart(item))}>
 							+
