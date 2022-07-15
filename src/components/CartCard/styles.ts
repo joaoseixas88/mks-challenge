@@ -20,11 +20,10 @@ export const FirstContent = styled.div`
   justify-content: center;
 
   .title {
-		display: flex;
-		
-    width: min-content;
+		max-width: 80px;
     text-align: center;
 		flex-wrap: wrap;
+		
   }
 `;
 
@@ -33,14 +32,13 @@ export const ImageContainer = styled.div`
   height: 8.6rem;
   align-items: center;
   justify-content: center;
-	margin-right: 15px;
+	margin-right: 5px;
   width: 2.4rem;
   height: 3.5rem;
 `;
 
 export const SecondContent = styled.div`
-  display: flex;
-	
+  display: flex;	
   align-items: center;
   justify-content: space-around;
   gap: 1rem;
