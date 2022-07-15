@@ -6,10 +6,11 @@ import { Dispatch, SetStateAction } from "react";
 
 interface Props {
 	openSideBar: () => void
+	quantity: number
 }
 
 
-export function Header({ openSideBar }: Props) {
+export function Header({ openSideBar, quantity  }: Props) {
 
 	
 	
@@ -21,7 +22,7 @@ export function Header({ openSideBar }: Props) {
 			</div>
 			<div className='cart-container' onClick={openSideBar}>
 				<Image src={Cart} />
-				<p>0</p>
+				<p>{quantity}</p>
 			</div>
 		</Container>
 	)

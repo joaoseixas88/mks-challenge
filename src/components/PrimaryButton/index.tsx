@@ -6,12 +6,13 @@ import { Container } from "./styles";
 interface Props {
 	label: string
 	icon: StaticImageData
+	onClick: () => void
 }
 
 
-export function PrimaryButton({ label, icon }: Props) {
+export function PrimaryButton({ label, icon, onClick }: Props) {
 	return (
-		<Container onClick={() => console.log('click')}>
+		<Container onClick={onClick}>
 			{ icon && <Image src={icon}/>}
 			{label}
 		</Container>

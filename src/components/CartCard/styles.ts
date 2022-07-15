@@ -2,39 +2,42 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background: ${({ theme }) => theme.colors.shape};
-  width: calc(385rem / 16);
-  height: calc(101rem / 16);
-  display: grid;
+  width: 24rem;
+  height: 6.3rem;
+	flex-wrap: wrap;
+  display: flex;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-  padding: 1rem 1.3rem;
   border-radius: 8px;
-	gap: 1.3rem;;
+	justify-content: center;
+	gap: 1rem;
 `;
+
+
 export const FirstContent = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
+  justify-content: center;
+	max-width: 50%;
+	gap: 0.5rem;
   .title {
-    width: calc(113rem / 16);
+    width: 5rem;
     text-align: center;
   }
 `;
 
 export const ImageContainer = styled.div`
   position: relative;
-  height: calc(138rem / 16);
+  height: 8.6rem;
   align-items: center;
   justify-content: center;
-  width: calc(46rem / 16);
-  height: calc(57rem / 16);
+  width: 2.8rem;
+  height: 3.5rem;
 `;
 
 export const SecondContent = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 50%;
   justify-content: space-around;
   gap: 1rem;
 
@@ -55,13 +58,14 @@ export const Counter = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
     border-radius: 0.5rem;
     width: 5rem;
     border: 1px solid ${({ theme }) => theme.colors.lightGray};
     list-style-type: none;
 		span{
 			color: ${({ theme }) => theme.colors.lightGray};
+			margin: 5px;
 		}
 		.custom-button{
 			padding: 0 0.2rem ;

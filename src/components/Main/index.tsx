@@ -1,15 +1,24 @@
+import { Product } from "../../store/ducks/products/types";
 import { ProductCard } from "../ProductCard";
+import { Skeleton } from "./Skeleton";
 import { Container } from "./styles";
 
-export function Main(){
-	return(
+
+interface Props {
+	products: Product[]
+	loading: boolean
+}
+
+export function Main({ products, loading }: Props) {
+	
+	return (
 		<Container>
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
-			<ProductCard />
+			{
+				loading ? <Skeleton /> :
+					products.map(item => {
+						return <ProductCard item={item} key={item.id} />
+					})
+			}
 		</Container>
 	)
 }

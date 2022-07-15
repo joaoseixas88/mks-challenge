@@ -4,28 +4,40 @@ import { PrimaryButton } from "../PrimaryButton";
 import Image from "next/image";
 import { PriceBadge } from "../PriceBadge";
 import ShoppingBag from '../../../public/assets/images/shopping-bag.svg'
+import { formatCurrency } from "../../utils/formatBRL";
+import { Product } from "../../store/ducks/products/types";
+import { useDispatch } from "react-redux";
+import { addItemToCart } from "../../store/ducks/cart/actions";
 
+interface Props {
+	item: Product
+}
 
+export function ProductCard({ item }: Props) {
 
-export function ProductCard() {
+	const dispatch = useDispatch()
+	
+
+	
+
 	return (
-		<Container>			
+		<Container>
 			<div className="image-container">
-				<Image src={'https://m.media-amazon.com/images/I/71rmYWczG6L._AC_SX679_.jpg'} layout='fill' objectFit="contain" />
+				<Image src={item.photo} layout='fill' objectFit="contain" />
 			</div>
 			<div className="price-container">
 				<div >
-					<h3>Apple iPad Pro 64GB</h3>
+					<h3>{item.name}</h3>
 				</div>
 				<div className='price'>
-					<PriceBadge price="R$ 300" />
+					<PriceBadge price={formatCurrency(item.price)} />
 				</div>
 			</div>
 			<div className="description">
-				<p>Redesigned from scratch and completely revised.</p>
+				<p>{item.description}</p>
 			</div>
 			<div className="btn-container">
-				<PrimaryButton label="COMPRAR" icon={ShoppingBag}/>
+				<PrimaryButton label="COMPRAR" icon={ShoppingBag} onClick={() => dispatch(addItemToCart(item))}/>
 			</div>
 		</Container>
 	)

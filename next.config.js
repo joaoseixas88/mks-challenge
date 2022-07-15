@@ -6,7 +6,7 @@ const nextConfig = {
 		styledComponents: true
 	},
 	images:{
-		domains:['github.com','m.media-amazon.com']
+		domains:['github.com','m.media-amazon.com','mks-sistemas.nyc3.digitaloceanspaces.com']
 	}
 }
 

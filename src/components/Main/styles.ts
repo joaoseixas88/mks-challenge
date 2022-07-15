@@ -5,7 +5,7 @@ export const Container = styled.main`
 	padding: 13rem 15rem;
 	margin-bottom: 20px;
 	gap: 22px;
-	/* overflow: scroll; */
+	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
 	grid-template-columns: repeat(4, 1fr);

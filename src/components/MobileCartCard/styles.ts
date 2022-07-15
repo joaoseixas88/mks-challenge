@@ -11,6 +11,12 @@ export const Container = styled.div`
   border-radius: 8px;
   padding: 1rem;
 	gap: 11px;
+
+
+	.title{
+		display: flex;
+		justify-content: center;
+	}
 `;
 
 export const ImageContainer = styled.div`
@@ -25,7 +31,7 @@ export const PriceContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
 `;
 
 export const Counter = styled.div`
