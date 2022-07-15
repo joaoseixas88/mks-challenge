@@ -10,6 +10,7 @@ export const Container = styled.div`
   border-radius: 8px;
 	justify-content: center;
 	padding: 0 .5rem;
+	gap: 1rem;
 `;
 
 
@@ -17,8 +18,10 @@ export const FirstContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-	flex: 1;
+
   .title {
+		display: flex;
+		
     width: min-content;
     text-align: center;
 		flex-wrap: wrap;
@@ -30,18 +33,17 @@ export const ImageContainer = styled.div`
   height: 8.6rem;
   align-items: center;
   justify-content: center;
-	margin-left: -30px;
-	margin-right: 20px;
+	margin-right: 15px;
   width: 2.4rem;
   height: 3.5rem;
 `;
 
 export const SecondContent = styled.div`
   display: flex;
-	flex: 1;
+	
   align-items: center;
   justify-content: space-around;
-  gap: .5rem;
+  gap: 1rem;
   h2 {
 		
     font-size: 14px;
