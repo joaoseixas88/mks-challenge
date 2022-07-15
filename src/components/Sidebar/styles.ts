@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.aside`
   height: 100vh;
   background: ${({ theme }) => theme.colors.primaryBlue};
   display: flex;
   flex-direction: column;
 	justify-content: space-between;
-
+	
 	
 `;
 
