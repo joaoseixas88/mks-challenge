@@ -10,7 +10,6 @@ export const Container = styled.div`
   border-radius: 8px;
 	justify-content: center;
 	padding: 0 .5rem;
-	flex-wrap: wrap;
 `;
 
 
