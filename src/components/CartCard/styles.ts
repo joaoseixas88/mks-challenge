@@ -20,8 +20,9 @@ export const FirstContent = styled.div`
   justify-content: center;
 	flex: 1;
   .title {
-    width: 5rem;
+    width: min-content;
     text-align: center;
+		flex-wrap: wrap;
   }
 `;
 
@@ -41,7 +42,7 @@ export const SecondContent = styled.div`
 	flex: 1;
   align-items: center;
   justify-content: space-around;
-  gap: 1rem;
+  gap: .5rem;
   h2 {
 		
     font-size: 14px;

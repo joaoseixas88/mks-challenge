@@ -15,13 +15,13 @@ export const GlobalStyle = createGlobalStyle`
 		cursor: pointer;
 	 }
 
-	 /* html {
+	 html {
     @media (max-width: 1080px) {
       font-size: 93.75%;
     }
     @media (max-width: 800px) {
       font-size: 87.5%;
     }
-  } */
+  }
 
 `;
